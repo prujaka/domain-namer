@@ -1,1 +1,2 @@
 notebook==7.4.5
+openai==1.98.0
