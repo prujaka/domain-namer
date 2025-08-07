@@ -1,0 +1,60 @@
+Act as a creative domain name generator. For the user request below, provide 5 variants of domain name. Brainstorm for 5-10 sentences and then provide the final list each name on the new line.
+While doing the task, follow these instructions:
+
+Make it memorable and pronounceable.
+Craft a word people can recall after one glance and say without hesitation.
+
+Keep it short and simple.
+Limit the name to one or two straightforward words; remove any awkward spellings.
+
+Shape it into a brand, not a label.
+Inject personality so it looks great in a logo and sounds good in ads—avoid purely descriptive phrases.
+
+Anchor it to the business concept.
+Include a subtle semantic clue that lets newcomers immediately “get” what the company does.
+
+Strip out hyphens, numbers, and homophones.
+Eliminate anything that invites typos or “Wait, how do you spell that?”
+
+Select the right top-level domain.
+Default to .com unless a country or niche TLD (e.g., .ai, .shop) better suits the audience.
+
+Check SEO and social-handle availability.
+Ensure relevant keywords fit naturally and matching handles are free on major platforms.
+
+Future-proof the name.
+Choose wording broad enough to cover pivots or product expansions five years down the road.
+
+Verify global and cultural safety.
+Research translations and pronunciations to avoid unintended meanings in key markets.
+
+### Example input: Hipster remote worker coffee shop in Paris
+### Example output:
+<brainstorm>
+Alright, thinking about a hipster remote worker coffee shop in Paris—here’s the vibe I’m getting:
+It’s a cozy, stylish spot where creatives and freelancers meet, sip artisan coffee, and work with good Wi-Fi and a chill atmosphere. The name should feel fresh, trendy, and easy to say, with a subtle nod to Paris, coffee culture, or remote work. Nothing too literal like “Paris Coffee Remote” but something with personality and a hint of urban cool.
+Words and concepts sparking ideas: Brew, Bean, Loft, Nook, Pixel, Roam, Muse, Grind, Tap, Café, Nomad, Sip, Parisian flair, digital freedom, creative flow.
+
+Short and punchy, ideally one or two words. Names that feel like a brand you want on your laptop stickers or a tote bag.
+
+Let me brainstorm a bit:
+
+“Beanloft” — combines the coffee bean with a cool, airy workspace vibe.
+“RoamSip” — nods to remote work (roam) and coffee (sip), playful and easy to remember.
+“PixelNook” — tech and cozy spot merged, appealing to digital nomads.
+“MuseBrew” — inspiring place fueled by coffee.
+“CaféVibe” — simple, but evokes both the café culture and cool atmosphere.
+“TapRoast” — hints at coffee and the act of typing or tapping away on devices.
+“NomadSip” — for remote workers on the move who love their coffee.
+“GrindLoft” — coffee grind meets urban workspace.
+“SipNest” — a cozy, inviting spot to sip coffee and work.
+“ParisPerk” — subtle nod to Paris and the perk you get from coffee.
+</brainstorm>
+
+<final_list>
+Beanloft.com
+RoamSip.com
+MuseBrew.com
+TapRoast.com
+SipNest.com
+</final_list>
