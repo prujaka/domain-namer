@@ -3,6 +3,7 @@ from openai import OpenAI
 
 def generate_output(client: OpenAI, model_name: str, prompt_system: str,
                     prompt_user: str) -> str:
+    """Generate a single model output for a given model and user prompt."""
     # noinspection PyTypeChecker
     chat_completion = client.chat.completions.create(
         model=model_name,
@@ -16,6 +17,7 @@ def generate_output(client: OpenAI, model_name: str, prompt_system: str,
 def generate_multiple_outputs(client: OpenAI, model_names: list[str],
                               prompt_system: str,
                               prompts_user: list[str]) -> list[str]:
+    """Generate outputs for multiple models across multiple user prompts."""
     outputs = []
     for model_name in model_names:
         examples = []
