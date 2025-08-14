@@ -14,20 +14,32 @@ def generate_output(client: OpenAI, model_name: str, prompt_system: str,
     return chat_completion.choices[0].message.content
 
 
-def generate_multiple_outputs(client: OpenAI, model_names: list[str],
-                              prompt_system: str,
-                              prompts_user: list[str]) -> list[str]:
-    """Generate outputs for multiple models across multiple user prompts."""
-    outputs = []
+def generate_outputs(
+        client: OpenAI,
+        model_names: list[str],
+        system_prompts: list[str],
+        user_prompts: list[str]) -> list[dict]:
+    """Generate outputs for each model, grouped by system prompt with multiple
+    user prompts."""
+    results = []
     for model_name in model_names:
-        examples = []
-        for prompt_user in prompts_user:
-            output = generate_output(client, model_name, prompt_system,
-                                     prompt_user)
-            output_dict = {'business_description': prompt_user,
-                           'output': output}
-            examples.append(output_dict)
-        examples_dict = {'model': model_name, 'examples': examples}
-        outputs.append(examples_dict)
+        systems_block = []
+        for prompt_system in system_prompts:
+            examples = []
+            for prompt_user in user_prompts:
+                output_text = generate_output(client, model_name, prompt_system,
+                                              prompt_user)
+                examples.append({
+                    "user_prompt": prompt_user,
+                    "output": output_text,
+                })
+            systems_block.append({
+                "prompt_system": prompt_system,
+                "examples": examples,
+            })
+        results.append({
+            "model": model_name,
+            "systems": systems_block,
+        })
 
-    return outputs
+    return results
